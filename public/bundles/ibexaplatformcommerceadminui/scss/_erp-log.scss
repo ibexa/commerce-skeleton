@@ -1,0 +1,15 @@
+.ez-erp-log {
+    &__item {
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__item-title {
+        font-weight: bold;
+    }
+
+    &__preview {
+        margin-top: calculateRem(8px);
+    }
+}

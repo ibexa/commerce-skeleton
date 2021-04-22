@@ -1,0 +1,8 @@
+.ez-ecommerce-cockpit-charts {
+    &__box {
+        padding: calculateRem(16px);
+        background-color: $ibexa-white;
+        min-height: calculateRem(352px);
+        margin-bottom: calculateRem(24px);
+    }
+}

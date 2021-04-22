@@ -1,0 +1,61 @@
+.ez-filters {
+    &--erp-logs {
+        margin-top: 0;
+        border: none;
+    }
+
+    &--email-archive,
+    &--erp-performance {
+        margin-top: 0;
+        border: none;
+
+        &:before {
+            display: none;
+        }
+
+        .ez-filters__row {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column-gap: calculateRem(16px);
+        }
+
+        .ez-filters__item--user-id {
+            .ez-filters__item-label {
+                display: block;
+            }
+        }
+
+        .ez-filters__item-desc {
+            height: calculateRem(38px);
+            background: $ibexa-black;
+            display: flex;
+            align-items: center;
+            padding: calculateRem(8px);
+            position: relative;
+            border-radius: calculateRem(4px);
+            color: $ibexa-white;
+        }
+
+        .ez-filters__btn-reset {
+            position: absolute;
+            right: 0;
+            border: none;
+
+            .ez-icon {
+                fill: $ibexa-white;
+            }
+        }
+
+        .ez-filters__item-desc--hidden,
+        .ez-filters__item-button--hidden {
+            display: none;
+        }
+    }
+
+    &--erp-logs {
+        border: none;
+
+        &:before {
+            display: none;
+        }
+    }
+}

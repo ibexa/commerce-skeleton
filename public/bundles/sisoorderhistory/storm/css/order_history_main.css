@@ -1,0 +1,120 @@
+#order_history {
+    position: relative;
+    /*width: 940px;*/
+    /*margin: 0 auto;*/
+    /*padding: 0;*/
+    }
+    #order_history table form {
+        width: auto;
+    }
+
+#order_history_loader {
+    position: absolute;
+    background: rgba(255,255,255,0.7);
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+#order_history_loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.dataTables_filter label {
+    display: inline;
+}
+
+.dataTables_filter {
+    margin-bottom: 20px;
+}
+
+.dataTable th {
+    background-color: #ccc !important;
+    border: 1px solid #fff !important;
+    padding: 0.3em !important;
+}
+
+.order_history_addresses {
+    padding-bottom: 1em;
+    border-bottom: 1px #aaa solid;
+}
+
+.order_history_addresses > div {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+#invoice_wrapper > div {
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.order_history_addresses span {
+    display: block;
+}
+
+#orderhistory-page .Zebra_DatePicker {
+    z-index: 99999;
+}
+
+.order_history_options > div {
+    float: left;
+    width: 33%;
+}
+
+.order_history_options > div:last-of-type {
+    float: right;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.order_history_options label {
+    width: 100%;
+}
+
+.order_history_options select {
+    height: 28px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    width: 212px;
+}
+
+.order_history_options {
+    overflow: auto;
+    margin-bottom: 15px;
+}
+
+.order_history_summary td {
+    border-top: 1px solid #aaa;
+}
+
+.dataTable th {
+    color: #6c6767;
+}
+
+table.dataTable.no-footer {
+    border-bottom-color: #aaa;
+}
+
+.Zebra_DatePicker td {
+    vertical-align: middle;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: .5em;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: .1em .5em;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: gainsboro;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #6c6767;
+}

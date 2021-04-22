@@ -1,0 +1,33 @@
+.ez-import-export {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calculateRem(24px) calculateRem(8px);
+
+    &__title {
+        font-size: calculateRem(16px);
+        margin-bottom: calculateRem(24px);
+    }
+
+    &__info {
+        margin-bottom: calculateRem(16px);
+    }
+
+    &__form {
+        display: flex;
+        margin-bottom: calculateRem(12px);
+    }
+
+    &__file-input {
+        display: inline-block;
+        margin-right: calculateRem(12px);
+        border: calculateRem(1px) solid $ibexa-color-base-dark;
+        padding: calculateRem(3px);
+        border-radius: $ibexa-border-radius;
+    }
+
+    &__note {
+        font-size: calculateRem(14px);
+        color: $ibexa-color-font-pale;
+    }
+}
