@@ -1,0 +1,14 @@
+.ez-erp-overview {
+    &__status-fine {
+        vertical-align: middle;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__status-checking--hidden,
+    &__status-no-connection--hidden {
+        display: none;
+    }
+}

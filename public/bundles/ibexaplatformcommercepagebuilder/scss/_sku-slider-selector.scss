@@ -1,0 +1,98 @@
+.ez-sku-slider-selector {
+    &__selected-items {
+        list-style: none;
+        padding: calculateRem(8px);
+        background-color: $ibexa-color-base-pale;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__selected-item {
+        display: flex;
+        border-radius: calculateRem(4px);
+        background-color: $ibexa-white;
+        border: calculateRem(2px) solid rgba($ibexa-white, 0.5);
+        padding: calculateRem(8px);
+        align-items: center;
+        margin-bottom: calculateRem(8px);
+        cursor: move;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            border: calculateRem(2px) solid rgba($ibexa-white, 0.75);
+        }
+
+        &--placeholder {
+            display: block;
+            height: calculateRem(40px);
+            background-color: rgba($ibexa-white, 0.25);
+            pointer-events: none;
+        }
+
+        &-drag {
+            display: flex;
+            flex-basis: calculateRem(32px);
+            height: calculateRem(32px);
+
+            .ez-icon {
+                align-self: center;
+                fill: $ibexa-white;
+                width: calculateRem(20px);
+                height: calculateRem(20px);
+            }
+        }
+
+        &-name {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 0 calculateRem(8px);
+            flex-basis: calc(100% - 3.5rem);
+            font-size: calculateRem(14px);
+        }
+    }
+
+    &__search-form {
+        display: flex;
+
+        .ez-btn--search {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    &__search-input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &__search-results {
+        padding: calculateRem(8px);
+        background-color: $ibexa-color-base-pale;
+        margin-top: calculateRem(16px);
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__search-item {
+        display: flex;
+        justify-content: space-between;
+        border-radius: calculateRem(4px);
+        background-color: $ibexa-white;
+        border: calculateRem(2px) solid rgba($ibexa-white, 0.5);
+        padding: calculateRem(8px);
+        align-items: center;
+        margin-bottom: calculateRem(8px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

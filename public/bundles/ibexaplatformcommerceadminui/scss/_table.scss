@@ -1,0 +1,48 @@
+.ez-table {
+    &--price-management,
+    &--stock-update,
+    &--shipping-management {
+        margin-bottom: calculateRem(24px);
+
+        tbody td {
+            vertical-align: middle;
+        }
+    }
+
+    &--price-management,
+    &--shipping-management {
+        .ez-icon--trash {
+            fill: $ibexa-color-primary;
+        }
+
+        tr:last-child td {
+            border-bottom: calculateRem(1px) solid $ibexa-color-base;
+        }
+    }
+
+    &--shipping-management {
+        .ez-custom-dropdown__selection-info  {
+            margin-bottom: 0;
+        }
+
+        .ez-table {
+            &__currency {
+                width: calculateRem(60px);
+            }
+
+            &__country-select {
+                width: calculateRem(75px);
+            }
+
+            &__shipping-cost,
+            &__value,
+            &__zip-input {
+                width: calculateRem(80px);
+            }
+
+            &__state-input {
+                width: calculateRem(100px);
+            }
+        }
+    }
+}

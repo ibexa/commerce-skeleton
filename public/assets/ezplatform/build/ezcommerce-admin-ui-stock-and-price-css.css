@@ -1,0 +1,471 @@
+/* eZ variables: These variables are deprecated, please use variables with the "ibexa" prefix */
+/* boostrap variables*/
+.ez-ecommerce-control-center .ez-alert--hidden {
+  display: none;
+}
+
+.ez-ecommerce-control-center .ez-icon--trash {
+  fill: #d92d42;
+}
+
+.ez-filters--erp-logs {
+  margin-top: 0;
+  border: none;
+}
+
+.ez-filters--email-archive, .ez-filters--erp-performance {
+  margin-top: 0;
+  border: none;
+}
+
+.ez-filters--email-archive:before, .ez-filters--erp-performance:before {
+  display: none;
+}
+
+.ez-filters--email-archive .ez-filters__row, .ez-filters--erp-performance .ez-filters__row {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.ez-filters--email-archive .ez-filters__item--user-id .ez-filters__item-label, .ez-filters--erp-performance .ez-filters__item--user-id .ez-filters__item-label {
+  display: block;
+}
+
+.ez-filters--email-archive .ez-filters__item-desc, .ez-filters--erp-performance .ez-filters__item-desc {
+  height: 2.375rem;
+  background: #131c26;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  position: relative;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.ez-filters--email-archive .ez-filters__btn-reset, .ez-filters--erp-performance .ez-filters__btn-reset {
+  position: absolute;
+  right: 0;
+  border: none;
+}
+
+.ez-filters--email-archive .ez-filters__btn-reset .ez-icon, .ez-filters--erp-performance .ez-filters__btn-reset .ez-icon {
+  fill: #fff;
+}
+
+.ez-filters--email-archive .ez-filters__item-desc--hidden,
+.ez-filters--email-archive .ez-filters__item-button--hidden, .ez-filters--erp-performance .ez-filters__item-desc--hidden,
+.ez-filters--erp-performance .ez-filters__item-button--hidden {
+  display: none;
+}
+
+.ez-filters--erp-logs {
+  border: none;
+}
+
+.ez-filters--erp-logs:before {
+  display: none;
+}
+
+.ez-modal--show-email .ez-modal__iframe {
+  width: 100%;
+  height: 50vh;
+  border: none;
+}
+
+.ez-modal--show-email .modal-header .close {
+  padding: 0.75rem 0;
+}
+
+.ez-modal--show-email .modal-dialog {
+  max-width: 50%;
+}
+
+.ez-modal--show-email .modal-body {
+  padding: 0;
+}
+
+.ez-live-tables--hidden {
+  display: none;
+}
+
+.ez-temporary-tables--hidden {
+  display: none;
+}
+
+.ez-swap-tables__swap-wrapper--hidden, .ez-swap-tables__in-progress--hidden, .ez-swap-tables__not-possible--hidden, .ez-swap-tables__import-active--hidden {
+  display: none;
+}
+
+.ez-backup__options-wrapper--hidden, .ez-backup__export-started--hidden {
+  display: none;
+}
+
+.ez-backup__options-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.ez-backup__input-name {
+  width: 12.5rem;
+}
+
+.ez-backup__dir {
+  display: block;
+}
+
+.ez-import-backup__import-in-progress--hidden, .ez-import-backup__options-wrapper--hidden, .ez-import-backup__no-files--hidden {
+  display: none;
+}
+
+.ez-import-backup__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.ez-erp-overview__status-fine {
+  vertical-align: middle;
+}
+
+.ez-erp-overview__status-fine--hidden {
+  display: none;
+}
+
+.ez-erp-overview__status-checking--hidden, .ez-erp-overview__status-no-connection--hidden {
+  display: none;
+}
+
+.ez-erp-log__item--hidden {
+  display: none;
+}
+
+.ez-erp-log__item-title {
+  font-weight: bold;
+}
+
+.ez-erp-log__preview {
+  margin-top: 0.5rem;
+}
+
+.ez-table-header--price-management .ez-table-header__tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ez-table-header--price-management .ez-table-header__price-select {
+  margin-right: 0.5rem;
+}
+
+.ez-sku-search {
+  padding: 1.5rem 0.5rem;
+}
+
+.ez-sku-search__tools {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.ez-sku-search__results--hidden {
+  display: none;
+}
+
+.ez-sku-search__input {
+  width: 12.5rem;
+  margin-right: 0.75rem;
+}
+
+.ez-sku-search .ez-btn--search {
+  display: flex;
+  align-items: center;
+}
+
+.ez-sku-search .ez-btn--hidden {
+  display: none;
+}
+
+.ez-import-export {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+}
+
+.ez-import-export__title {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ez-import-export__info {
+  margin-bottom: 1rem;
+}
+
+.ez-import-export__form {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.ez-import-export__file-input {
+  display: inline-block;
+  margin-right: 0.75rem;
+  border: 0.0625rem solid #878b90;
+  padding: 0.1875rem;
+  border-radius: 0.125rem;
+}
+
+.ez-import-export__note {
+  font-size: 0.875rem;
+  color: #878b90;
+}
+
+.ez-shipping-management {
+  padding: 0 0.5rem 1.5rem;
+}
+
+.ez-table--price-management, .ez-table--stock-update, .ez-table--shipping-management {
+  margin-bottom: 1.5rem;
+}
+
+.ez-table--price-management tbody td, .ez-table--stock-update tbody td, .ez-table--shipping-management tbody td {
+  vertical-align: middle;
+}
+
+.ez-table--price-management .ez-icon--trash, .ez-table--shipping-management .ez-icon--trash {
+  fill: #ae1164;
+}
+
+.ez-table--price-management tr:last-child td, .ez-table--shipping-management tr:last-child td {
+  border-bottom: 0.0625rem solid #e0e0e8;
+}
+
+.ez-table--shipping-management .ez-custom-dropdown__selection-info {
+  margin-bottom: 0;
+}
+
+.ez-table--shipping-management .ez-table__currency {
+  width: 3.75rem;
+}
+
+.ez-table--shipping-management .ez-table__country-select {
+  width: 4.6875rem;
+}
+
+.ez-table--shipping-management .ez-table__shipping-cost, .ez-table--shipping-management .ez-table__value, .ez-table--shipping-management .ez-table__zip-input {
+  width: 5rem;
+}
+
+.ez-table--shipping-management .ez-table__state-input {
+  width: 6.25rem;
+}
+
+.ez-stock-update {
+  display: flex;
+}
+
+.ez-stock-update__item {
+  margin-right: 2rem;
+}
+
+.ez-stock-update__sku {
+  line-height: 2.375rem;
+}
+
+.ez-stock-update__label {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.ez-stock-update__input {
+  width: 12.5rem;
+}
+
+.ez-stock-update .ez-btn {
+  margin-top: 2rem;
+}
+
+.ez-product-management {
+  margin-bottom: 2rem;
+}
+
+.ez-product-management__title {
+  font-size: 1rem;
+}
+
+.ez-ecommerce-address__list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.ez-ecommerce-cockpit .ez-tabs--commerce-cockpit {
+  border-bottom: 0;
+}
+
+.ez-ecommerce-cockpit .ez-filters {
+  border: 0;
+}
+
+.ez-ecommerce-cockpit .ez-filters__row {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: 0;
+}
+
+.ez-ecommerce-cockpit .ez-filters:before, .ez-ecommerce-cockpit .ez-filters:after {
+  display: none;
+}
+
+.ez-ecommerce-cockpit-charts__box {
+  padding: 1rem;
+  background-color: #fff;
+  min-height: 22rem;
+  margin-bottom: 1.5rem;
+}
+
+.ez-ecommerce-cockpit-products-and-sales__table {
+  max-height: 21.875rem;
+  overflow-y: auto;
+  margin-bottom: 3rem;
+}
+
+.ez-ecommerce-cockpit-products-and-sales__table .ez-table {
+  margin-bottom: 0;
+}
+
+.ez-ecommerce-cockpit-search__table {
+  max-height: 21.875rem;
+  overflow-y: auto;
+  margin-bottom: 3rem;
+}
+
+.ez-ecommerce-cockpit-search__table .ez-table {
+  margin-bottom: 0;
+}
+
+.ez-ecommerce-cockpit-status {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.ez-ecommerce-cockpit-status--two-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.ez-ecommerce-cockpit-status__box {
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+
+.ez-ecommerce-cockpit-status__box-header {
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+  margin-bottom: 0;
+}
+
+.ez-ecommerce-cockpit-status__box-content {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0 0 0.3125rem 0.3125rem;
+  min-height: 7rem;
+}
+
+.ez-ecommerce-cockpit-status__box-content--with-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.ez-ecommerce-cockpit-status__erp-status {
+  text-align: center;
+}
+
+.ez-ecommerce-cockpit-status__erp-status .ez-icon {
+  margin-top: 0.5rem;
+}
+
+.ez-ecommerce-cockpit-status__erp-status--hidden {
+  display: none;
+}
+
+.ez-ecommerce-cockpit-status__erp-status--error .ez-icon {
+  fill: #d92d42;
+}
+
+.ez-ecommerce-cockpit-status__erp-status--success .ez-icon {
+  fill: #00825c;
+}
+
+.ez-ecommerce-order-details .modal-dialog {
+  width: 50rem;
+  max-width: initial;
+}
+
+.ez-ecommerce-order-details__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10%;
+}
+
+.ez-ecommerce-order-details__item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 0.0625rem solid #131c26;
+  text-align: left;
+}
+
+.ez-ecommerce-order-list .ez-filters {
+  padding: 0;
+  border: 0;
+}
+
+.ez-ecommerce-order-list .ez-filters:before, .ez-ecommerce-order-list .ez-filters:after {
+  display: none;
+}
+
+.ez-ecommerce-order-list .ez-table__cell--has-action-btns {
+  white-space: nowrap;
+}
+
+.ez-ecommerce-order-list .ez-btn--trash .ez-icon {
+  fill: #d92d42;
+}
+
+.ez-ecommerce-order-list .ez-btn--transfer .ez-icon {
+  transform: scaleX(-1);
+}
+
+.ez-ecommerce-user-tab__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ez-ecommerce-user-tab__item {
+  margin-bottom: 1rem;
+}
+
+.ez-ecommerce-user-tab__item:nth-child(2n + 1) {
+  flex-basis: 20%;
+}
+
+.ez-ecommerce-user-tab__item:nth-child(2n) {
+  flex-basis: 80%;
+}
+
+.ez-ecommerce-user-tab .ez-commerce-user-overview {
+  min-height: 20rem;
+}
+
+.ez-price-table {
+  margin-bottom: 1.5rem;
+}
+
+.ez-date-select[readonly] {
+  background: #fff;
+}
+

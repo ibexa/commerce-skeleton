@@ -1,0 +1,23 @@
+.ez-modal {
+    &--show-email {
+        .ez-modal__iframe {
+            width: 100%;
+            height: 50vh;
+            border: none;
+        }
+
+        .modal-header {
+            .close {
+                padding: calculateRem(12px) 0;
+            }
+        }
+
+        .modal-dialog {
+            max-width: 50%;
+        }
+
+        .modal-body {
+            padding: 0;
+        }
+    }
+}

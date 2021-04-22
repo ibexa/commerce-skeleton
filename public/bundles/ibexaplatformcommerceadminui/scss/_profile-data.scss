@@ -1,0 +1,15 @@
+.ez-profile-data {
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__card {
+        width: calculateRem(250px);
+        height: calculateRem(240px);
+        margin-right: calculateRem(32px);
+        margin-bottom: calculateRem(16px);
+        margin-top: calculateRem(16px);
+    }
+}

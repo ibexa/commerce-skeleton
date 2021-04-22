@@ -1,0 +1,8 @@
+.ez-swap-tables {
+    &__swap-wrapper--hidden,
+    &__in-progress--hidden,
+    &__not-possible--hidden,
+    &__import-active--hidden {
+        display: none;
+    }
+}
