@@ -1,0 +1,19 @@
+.ez-ecommerce-order-details {
+    .modal-dialog {
+        width: calculateRem(800px);
+        max-width: initial;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10%;
+    }
+
+    &__item {
+        margin-bottom: calculateRem(16px);
+        padding: calculateRem(16px);
+        border: calculateRem(1px) solid $ibexa-black;
+        text-align: left;
+    }
+}

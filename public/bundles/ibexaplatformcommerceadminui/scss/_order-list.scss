@@ -1,0 +1,29 @@
+.ez-ecommerce-order-list {
+    .ez-filters {
+        padding: 0;
+        border: 0;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+    .ez-table__cell--has-action-btns {
+        white-space: nowrap;
+    }
+
+    .ez-btn {
+        &--trash {
+            .ez-icon {
+                fill: $ibexa-color-danger;
+            }
+        }
+
+        &--transfer {
+            .ez-icon {
+                transform: scaleX(-1);
+            }
+        }
+    }
+}

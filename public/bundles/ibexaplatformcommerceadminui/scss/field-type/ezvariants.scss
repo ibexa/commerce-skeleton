@@ -1,0 +1,33 @@
+.ez-field-edit--ezvariants {
+    .ez-custom-dropdown__select {
+        display: none;
+    }
+
+    .ez-field-edit__error {
+        @include error-under-label();
+    }
+
+    .ez-data-source {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .ez-custom-dropdown {
+        width: 50%;
+
+        &--hidden {
+            display: none;
+        }
+
+        &__selection-info,
+        &__items {
+            width: 100%;
+        }
+    }
+
+    .ez-btn--add-variant {
+        margin-left: calculateRem(12px);
+        min-height: calculateRem(38px);
+    }
+}

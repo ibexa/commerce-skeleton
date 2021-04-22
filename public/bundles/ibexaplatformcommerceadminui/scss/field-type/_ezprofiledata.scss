@@ -1,0 +1,56 @@
+.ez-field-edit--ezprofiledata {
+    .ez-data-source {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: calculateRem(32px);
+    }
+
+    .ez-field-edit__error {
+        @include error-under-label();
+    }
+
+    .ez-card--row-group {
+        & > .ez-card {
+            &__header {
+                justify-content: space-between;
+                white-space: nowrap;
+
+                .btn {
+                    line-height: 0.85;
+                    padding: calculateRem(8px) calculateRem(8.8px);
+                    margin-left: calculateRem(2.4px);
+                    margin-right: 0;
+
+                    .ez-icon-create {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &__body {
+                background-color: $ibexa-white;
+            }
+        }
+    }
+
+    :not(.ez-card--row-group) {
+        .ez-label:after {
+            display: none;
+        }
+
+        .ez-btn--remove-address {
+            margin-top: calculateRem(-2px);
+            margin-right: calculateRem(8px);
+
+            .ez-icon {
+                fill: $ibexa-color-danger;
+            }
+        }
+    }
+
+    .ez-data-source__label {
+        &.required {
+            @include label-required();
+        }
+    }
+}

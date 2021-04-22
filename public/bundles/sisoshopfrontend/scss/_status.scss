@@ -1,0 +1,52 @@
+.ezcommerce-status {
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        background: #89c4f4;
+        border-radius: 50%;
+    }
+
+    &__icon-content {
+        fill: #fff;
+        width: 14px;
+        height: 14px;
+    }
+
+    &__label {
+        display: inline-block;
+        padding: 2px 4px;
+        font-size: 10px;
+        background: #89c4f4;
+        color: #fff;
+    }
+
+    &--available {
+        .ezcommerce-status {
+            &__icon,
+            &__label {
+                background: #6ed35f;
+            }
+        }
+    }
+
+    &--low {
+        .ezcommerce-status {
+            &__icon,
+            &__label {
+                background: #f89406;
+            }
+        }
+    }
+
+    &--unavailable {
+        .ezcommerce-status {
+            &__icon,
+            &__label {
+                background: #f22613;
+            }
+        }
+    }
+}

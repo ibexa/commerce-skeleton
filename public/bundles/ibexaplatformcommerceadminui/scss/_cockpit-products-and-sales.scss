@@ -1,0 +1,11 @@
+.ez-ecommerce-cockpit-products-and-sales {
+    &__table {
+        max-height: calculateRem(350px);
+        overflow-y: auto;
+        margin-bottom: calculateRem(48px);
+
+        .ez-table {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.ez-specifications {
+    &.ez-card {
+        .ez-table {
+            margin-bottom: 0;
+
+            &__cell {
+                vertical-align: middle;
+            }
+        }
+
+        .form-control {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.ez-backup {
+    &__options-wrapper--hidden,
+    &__export-started--hidden {
+        display: none;
+    }
+
+    &__options-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input-name {
+        width: calculateRem(200px);
+    }
+
+    &__dir {
+        display: block;
+    }
+}

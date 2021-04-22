@@ -1,0 +1,131 @@
+.ezcommerce-quickorder {    
+    margin: 20px 15px 100px;
+
+    &__header {
+        margin-bottom: 16px;
+    }
+
+    .ezcommerce-basket {
+        &__header-item,
+        &__line-content-item {
+            &--sku {
+                width: 44%;
+            }
+
+            &--quantity {
+                width: 17%;
+                display: flex;
+            }
+
+            &--unit-price, 
+            &--total-price {
+                width: 17%;
+            }
+
+            &--delete {
+                width: 5%;
+            }
+
+            input {
+                margin-bottom: 0;
+            }
+        }
+
+        &__line-header {
+            display: flex;
+            padding: 0 20px;
+            margin-bottom: 10px;
+        }
+
+        &__line-content {
+            display: flex;
+
+            & > div {
+                padding: 0 20px;
+            }
+        }
+
+        &__line-footer {
+            display: flex;
+            align-items: center;
+            width: 42%;
+            padding: 0 20px;
+
+            .ezcommerce-quickorder__custom-text-input {
+                margin-bottom: 0;
+            }
+        }
+
+        &__line {
+            flex-direction: column;
+        }
+
+        &__button {
+            &--add-line,
+            &--remove-line {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 35px;
+                width: 35px;
+                padding: 0;
+                font-size: 18px;
+                background-color: #CCCCCC;
+                color: #333333;
+        
+                &:hover {
+                    color: #fff;
+                    background-color: #a3a3a3;
+                }
+            }
+        }
+    }
+
+    &__csv-container {
+        display: flex;
+    }
+
+    &__csv-file-container {
+        flex: 1;
+    }
+
+    &__csv-textarea-container {
+        flex: 2;
+    }
+
+    &__lines-action {
+        display: flex;
+        margin: 16px 0;
+    }
+
+    &__lines-action-left-col {
+        flex: 1;
+    }
+
+    &__lines-action-right-col {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    &__rows-number-select {
+        margin: 0 6px 0;
+        max-width: 100px;
+    }
+    
+    &__form-header-buttons,
+    &__form-custom-text-label {
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 0;
+    }
+
+    &__form-quantity-input {
+        text-align: right;
+    }
+
+    &__form-footer-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}
