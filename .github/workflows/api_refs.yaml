@@ -15,7 +15,6 @@ jobs:
             with:
                 repository: ibexa/documentation-developer
                 workflow: 'api_refs.yaml'
-                ref: ${{ github.ref_name }}
                 route: POST /repos/{repository}/actions/workflows/{workflow}/dispatches
                 inputs: '{ "version": "${{ github.ref_name }}" }'
             env:
