@@ -1,0 +1,21 @@
+name: 'API References'
+
+on:
+    push:
+        tags:
+            - 'v*'
+
+jobs:
+    trigger-api-refs-build:
+        name: 'Build API References'
+        runs-on: ubuntu-latest
+        steps:
+          - uses: octokit/request-action@v2.x
+            name: "Trigger API references' build"
+            with:
+                repository: ibexa/documentation-developer
+                workflow: 'api_refs.yaml'
+                route: POST /repos/{repository}/actions/workflows/{workflow}/dispatches
+                inputs: '{ "version": "${{ github.ref_name }}" }'
+            env:
+                GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
