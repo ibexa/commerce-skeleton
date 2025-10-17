@@ -10,6 +10,14 @@ jobs:
         name: 'Build API References'
         runs-on: ubuntu-latest
         steps:
+          - name: Generate token
+            id: generate_token
+            uses: actions/create-github-app-token@v2
+            with:
+                app-id: ${{ secrets.AUTOMATION_CLIENT_ID }}
+                private-key: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
+                owner: ${{ github.repository_owner }}
+
           - uses: octokit/request-action@v2.x
             name: "Trigger API references' build"
             with:
@@ -19,4 +27,4 @@ jobs:
                 route: POST /repos/{repository}/actions/workflows/{workflow}/dispatches
                 inputs: '{ "version": "${{ github.ref_name }}" }'
             env:
-                GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
+                GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
