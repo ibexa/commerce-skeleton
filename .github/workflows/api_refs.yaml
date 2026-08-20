@@ -8,23 +8,21 @@ on:
 jobs:
     trigger-api-refs-build:
         name: 'Build API References'
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-26.04
         steps:
           - name: Generate token
             id: generate_token
-            uses: actions/create-github-app-token@v2
+            uses: actions/create-github-app-token@v3
             with:
-                app-id: ${{ secrets.AUTOMATION_CLIENT_ID }}
+                client-id: ${{ secrets.AUTOMATION_CLIENT_ID }}
                 private-key: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
                 owner: ${{ github.repository_owner }}
 
-          - uses: octokit/request-action@v2.x
-            name: "Trigger API references' build"
-            with:
-                repository: ibexa/documentation-developer
-                workflow: 'api_refs.yaml'
-                ref: '!!str 5.0'
-                route: POST /repos/{repository}/actions/workflows/{workflow}/dispatches
-                inputs: '{ "version": "${{ github.ref_name }}" }'
+          - name: "Trigger API references' build"
+            shell: bash
+            run: |
+                gh api --method POST "/repos/ibexa/documentation-developer/actions/workflows/api_refs.yaml/dispatches" \
+                  -f ref="5.0" \
+                  -f "inputs[version]=${{ github.ref_name }}"
             env:
                 GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
